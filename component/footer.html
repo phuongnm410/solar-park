@@ -1,0 +1,35 @@
+<style>
+    .arrow-container {
+            position: fixed;
+            bottom: 40px;
+            left: 50%;
+            width: 50px;
+            height: 15%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            opacity: 1;
+            transition: opacity 0.5s;
+        }
+
+        .arrow {
+            font-size: 4rem;
+            color: #FFF;
+            animation: moveDown 2s linear infinite;
+        }
+
+        @keyframes moveDown {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(100%);
+            }
+        }
+</style>
+<div class="arrow-container" id="arrow-container">
+    <div class="arrow">&#8595;</div>
+</div>
+<script>
+</script>
